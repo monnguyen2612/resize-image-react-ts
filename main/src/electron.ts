@@ -5,7 +5,7 @@ import * as path from 'path'
 let mainWindow : BrowserWindow ;
 
 function createWindow() {
-    mainWindow = new BrowserWindow({ width: 900, height: 680 ,  webPreferences : {
+    mainWindow = new BrowserWindow({ fullscreen: true, autoHideMenuBar: true,  webPreferences : {
         nodeIntegration: true,
       } });
     mainWindow.loadURL(
